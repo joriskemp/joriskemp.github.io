@@ -30,8 +30,8 @@ Q.Sprite.extend("Player",{
     // dit is de plek van het mannetje
     this._super(p, {
       sheet: "player",  // Setting a sprite sheet sets sprite width and height
-      x: 420,           // You can also set additional properties that can
-      y: 10             // be overridden on object creation
+      x: 90,           // You can also set additional properties that can
+      y: 0             // be overridden on object creation
     });
 
     // Add in pre-made components to get up and running quickly
@@ -118,14 +118,18 @@ Q.scene("level1",function(stage) {
   stage.add("viewport").follow(player);
 
   // dit zijn de vijanden
-  stage.insert(new Q.Enemy({ x: 700, y: 0 }));
+ 
   stage.insert(new Q.Enemy({ x: 800, y: 0 }));
-  stage.insert(new Q.Enemy({ x: 100, y: 0 }));
+  stage.insert(new Q.Enemy({ x: 400, y: 0 }));
   stage.insert(new Q.Enemy({ x: 300, y: 0 }));
-
-
+  stage.insert(new Q.Enemy({ x: 780, y: 0 }));
+   stage.insert(new Q.Enemy({ x: 90, y: 383 }));
+ stage.insert(new Q.Enemy({ x: 90, y: 383 }));
+ stage.insert(new Q.Enemy({ x: 760, y: 333 }));
+ 
+ 
   // dit is de schatkist x=rechts en y =van boven naar beneden
-  stage.insert(new Q.Tower({ x: 180, y: 50 }));
+  stage.insert(new Q.Tower({ x: 660, y: 333 }));
 });
 
 // To display a game over / game won popup box, 
@@ -137,7 +141,7 @@ Q.scene('endGame',function(stage) {
   }));
 
   var button = container.insert(new Q.UI.Button({ x: 0, y: 0, fill: "#CCCCCC",
-                                                  label: "Nog een keer" }))         
+                                                  label: "opnieuw" }))         
   var label = container.insert(new Q.UI.Text({x:10, y: -10 - button.p.h, color:"red",
                                                    label: stage.options.label }));
   // When the button is clicked, clear all the stages
