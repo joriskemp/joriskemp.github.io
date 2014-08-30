@@ -60,11 +60,11 @@ Q.Sprite.extend("Player",{
 
       // Check the collision, if it's the Tower, you win!
       if(collision.obj.isA("Tower")) {
-        score=score+200;
+        score=score+100;
         levelNu=levelNu+1;
         if (levelNu>4) {
           Q.stageScene("endGame",1, { label: "Het spel is afgelopen. Score was "+score+". Opnieuw?" });
-          levelNu=0;
+          levelNu=1;
           score=0;
         } else {
           Q.stageScene("endGame",1, { label: "Ben je klaar voor het volgende level?" });
