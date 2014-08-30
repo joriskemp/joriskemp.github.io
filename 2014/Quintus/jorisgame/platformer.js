@@ -153,7 +153,7 @@ Q.scene("level1",function(stage) {
  
  
   // dit is de schatkist x=rechts en y =van boven naar beneden
-  stage.insert(new Q.Tower({ x: 660, y: 333 }));
+  stage.insert(new Q.Tower({ x: 1320, y: 333 }));
 });
 
 // ## Level2 scene
