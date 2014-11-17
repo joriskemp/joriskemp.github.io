@@ -187,7 +187,7 @@ Q.scene("level2",function(stage) {
   stage.insert(new Q.Enemy({ x: 760, y: 333 }));
   stage.insert(new Q.Enemy({ x: 1100, y: 0 }));
   stage.insert(new Q.Enemy({ x: 1200, y: 0 }));
-  stage.insert(new Q.Enemy({ x: 1200, y: 200 }));  
+  stage.insert(new Q.Enemy({ x: 1200, y: 300 }));  
 
   
   // dit is de schatkist x=rechts en y =van boven naar beneden
