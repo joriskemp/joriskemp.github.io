@@ -109,7 +109,7 @@ Q.Sprite.extend("Enemy",{
         collision.obj.destroy();
       }
     });
-
+<audio autoplay> <source src="muziek/grapes_-_I_dunno.mp3" type="audio/mpeg"> <source src="muziek/grapes_-_I_dunno.ogg" type="audio/ogg"> </audio> - See more at: http://www.mijn-eigen-website.nl/achtergrondmuziek.html#sthash.i6kJj97n.dpuf
     // If the enemy gets hit on the top, destroy it
     // and give the user a "hop"
     this.on("bump.top",function(collision) {
