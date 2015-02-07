@@ -17,7 +17,7 @@ function scoreBijwerken(){
 }
 
 window.addEventListener("load",function() {
-<audio autoplay> <source src="muziek/grapes_-_I_dunno.mp3" type="audio/mpeg"> <source src="muziek/grapes_-_I_dunno.ogg" type="audio/ogg"> </audio> 
+
 scoreBijwerken();
 
 // Set up an instance of the Quintus engine  and include
