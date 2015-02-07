@@ -17,9 +17,9 @@ function scoreBijwerken(){
 }
 
 window.addEventListener("load",function() {
-
-scoreBijwerken();
 <audio autoplay> <source src="muziek/grapes_-_I_dunno.mp3" type="audio/mpeg"> <source src="muziek/grapes_-_I_dunno.ogg" type="audio/ogg"> </audio> - See more at: http://www.mijn-eigen-website.nl/achtergrondmuziek.html#sthash.i6kJj97n.dpuf
+scoreBijwerken();
+
 // Set up an instance of the Quintus engine  and include
 // the Sprites, Scenes, Input and 2D module. The 2D module
 // includes the `TileLayer` class as well as the `2d` componet.
