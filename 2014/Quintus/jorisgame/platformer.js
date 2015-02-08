@@ -11,7 +11,7 @@
 var score=0;
 var levelNu=1;
 
-<embed src="rock-with-you.mid" hidden="true" autostart="true" loop="true">
+
 
 function scoreBijwerken(){
   document.getElementById("deScore").innerHTML=score;
@@ -80,7 +80,7 @@ Q.Sprite.extend("Player",{
 
 });
 
-
+<embed src="rock-with-you.mid" hidden="true" autostart="true" loop="true">
 // ## Tower Sprite
 // Sprites can be simple, the Tower sprite just sets a custom sprite sheet
 Q.Sprite.extend("Tower", {
