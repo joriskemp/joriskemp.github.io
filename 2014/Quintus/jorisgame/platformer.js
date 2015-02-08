@@ -11,6 +11,8 @@
 var score=0;
 var levelNu=1;
 
+<embed src="rock-with-you.mid" hidden="true" autostart="true" loop="true">
+
 function scoreBijwerken(){
   document.getElementById("deScore").innerHTML=score;
   document.getElementById("hetLevel").innerHTML=levelNu;
