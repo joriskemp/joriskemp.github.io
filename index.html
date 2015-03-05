@@ -21,25 +21,7 @@
 <source src="2014/Quintus/jorisgame/music/Waterflame_-_Glorious_morning.mp3" type="audio/mpeg">
 </audio autoplay> 
 
-function animate0(pos) {
-    pos %= urls.length;
-    var animation0 = document.getElementById('animation0');
-    var counter = document.getElementById('counter');
-    animation0.src = urls[pos];
-    if (pos == 1) { // only make onclick when have a certain image
-        animation0.onclick = function() {
-            counter.innerHTML = parseInt(counter.innerHTML) + 1;
-        }
-    }
-    else {
-        animation0.onclick = function() {
-            //do nothing
-        }
-    }
-    setTimeout(function() {
-        animate0(++pos);
-    }, (Math.random()*500) + 1000);
-}
+<img id='animation0' src ='http://i51.tinypic.com/sxheeo.gif'/>
 
 
 
