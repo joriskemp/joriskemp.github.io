@@ -16,6 +16,7 @@ var levelNu=1;
 function scoreBijwerken(){
   document.getElementById("deScore").innerHTML=score;
   document.getElementById("hetLevel").innerHTML=levelNu;
+  document.getElementById("denaam").innerHTML=naam;
 }
 
 window.addEventListener("load",function() {
