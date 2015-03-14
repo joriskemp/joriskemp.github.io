@@ -67,11 +67,11 @@ Q.Sprite.extend("Player",{
         score=score+100;
         levelNu=levelNu+1;
         if (levelNu>4) {
-          Q.stageScene("endGame",1, { label: "beste "+denaam+"Het spel is afgelopen. Score was "+score+".het hele spel Opnieuw?" });
+          Q.stageScene("endGame",1, { label: "beste "+naam+"Het spel is afgelopen. Score was "+score+".het hele spel Opnieuw?" });
           levelNu=1;
           score=0;
         } else {
-          Q.stageScene("endGame",1, { label: "beste "+denaam+"Ben je klaar voor het volgende level?" });
+          Q.stageScene("endGame",1, { label: "beste "+naam+"Ben je klaar voor het volgende level?" });
         }
         this.destroy();
         scoreBijwerken();
@@ -107,7 +107,7 @@ Q.Sprite.extend("Enemy",{
     //als je een monster raakt, auw!
     this.on("bump.left,bump.right,bump.bottom",function(collision) {
       if(collision.obj.isA("Player")) { 
-        Q.stageScene("endGame",1, { label: "beste "+denaam+"Je bent dood, score was " + score + " Opnieuw?"});
+        Q.stageScene("endGame",1, { label: "beste "+naam+"Je bent dood, score was " + score + " Opnieuw?"});
         score=0; 
         scoreBijwerken();
         collision.obj.destroy();
