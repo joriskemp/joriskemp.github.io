@@ -107,7 +107,7 @@ Q.Sprite.extend("Enemy",{
     //als je een monster raakt, auw!
     this.on("bump.left,bump.right,bump.bottom",function(collision) {
       if(collision.obj.isA("Player")) { 
-        Q.stageScene("endGame",1, { label: "Je bent dood, score was " + score + " Opnieuw?"});
+        Q.stageScene("endGame",1, { label: "beste "+denaam+"Je bent dood, score was " + score + " Opnieuw?"});
         score=0; 
         scoreBijwerken();
         collision.obj.destroy();
