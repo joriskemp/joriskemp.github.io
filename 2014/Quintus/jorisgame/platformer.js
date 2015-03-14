@@ -13,11 +13,11 @@ var levelNu=1;
 
 
 
-function denaam(){
+
 function scoreBijwerken(){
   document.getElementById("deScore").innerHTML=score;
   document.getElementById("hetLevel").innerHTML=levelNu;
- document.getElementById("denaam").innerHTML=naam; 
+  document.getElementById("denaam").innerHTML=naam; 
 }
 
 window.addEventListener("load",function() {
@@ -67,11 +67,11 @@ Q.Sprite.extend("Player",{
         score=score+100;
         levelNu=levelNu+1;
         if (levelNu>4) {
-          Q.stageScene("endGame",1, { label: "beste +denaam+ Het spel is afgelopen. Score was "+score+".het hele spel Opnieuw?" });
+          Q.stageScene("endGame",1, { label: "beste "+denaam+"Het spel is afgelopen. Score was "+score+".het hele spel Opnieuw?" });
           levelNu=1;
           score=0;
         } else {
-          Q.stageScene("endGame",1, { label: "beste +denaam+ Ben je klaar voor het volgende level?" });
+          Q.stageScene("endGame",1, { label: "beste "+denaam+"Ben je klaar voor het volgende level?" });
         }
         this.destroy();
         scoreBijwerken();
