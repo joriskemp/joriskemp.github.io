@@ -10,7 +10,7 @@
 
 var score=0;
 var levelNu=1;
-var Arjan= document.getElementById("someInput").innerHTML;
+var Arjan= nameElement.value;
 var naam;
 
 
