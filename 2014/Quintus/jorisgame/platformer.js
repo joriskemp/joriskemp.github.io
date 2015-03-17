@@ -9,7 +9,8 @@
 // target for the player.
 
 var score=0;
-var naam="Joris";
+var naam=document.getElementById("denaam");
+
 var levelNu=1;
 
 
