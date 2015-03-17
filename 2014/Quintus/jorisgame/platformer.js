@@ -10,8 +10,7 @@
 
 var score=0;
 var levelNu=1;
-var Arjan= nameElement.value;
-var naam;
+var naam=document.getElementById("someInput").innerHTML;
 
 
 function scoreBijwerken(){
@@ -109,7 +108,7 @@ Q.Sprite.extend("Enemy",{
     //als je een monster raakt, auw!
     this.on("bump.left,bump.right,bump.bottom",function(collision) {
       if(collision.obj.isA("Player")) { 
-        Q.stageScene("endGame",1, { label: "beste " + Arjan + " je bent dood, score was " + score + " Opnieuw?"});
+        Q.stageScene("endGame",1, { label: "beste " + naam + " je bent dood, score was " + score + " Opnieuw?"});
         score=0; 
         scoreBijwerken();
         collision.obj.destroy();
