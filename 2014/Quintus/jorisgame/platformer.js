@@ -10,6 +10,8 @@
 
 var score=0;
 var levelNu=1;
+var nameElement = document.getElementById("naam");
+var naam = nameElement.value;
 
 
 
