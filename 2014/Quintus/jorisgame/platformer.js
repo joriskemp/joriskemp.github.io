@@ -10,10 +10,16 @@
 
 var score=0;
 var levelNu=1;
-var Arjan = nameElement.value;
+var Arjan;
+var naam;
 
-
-
+function Remembername(){
+  document.getElementById("someInput").innerHTML=Arjan;
+  
+  
+  
+  
+}
 
 function scoreBijwerken(){
   document.getElementById("deScore").innerHTML=score;
@@ -26,7 +32,7 @@ function scoreBijwerken(){
 window.addEventListener("load",function() {
 
 scoreBijwerken();
-
+Remembername();
 // Set up an instance of the Quintus engine  and include
 // the Sprites, Scenes, Input and 2D module. The 2D module
 // includes the `TileLayer` class as well as the `2d` componet.
