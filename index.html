@@ -13,10 +13,8 @@
 <form method="post" action="http://joriskemp.github.io/2014/Quintus/jorisgame/platformer.js">
 </script>
 <script>
-document.cookie = "John Doe; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-var naam = "te";
-document.cookie = naam +"; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-document.cookie=naam; 
+
+
  </script>
     <label>mijn naam</label><br>
     <input name="denaam" type="text" id="nam"  required />
@@ -36,12 +34,19 @@ document.cookie=naam;
       function RememberStuff()
       {
         var nameElement = document.getElementById("someInput");
-      
+        var naam = nameElement.value;
+        document.cookie=naam +"; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        document.cookie=naam; 
              }
 
   </script>
  <input id="someInput" type="text">
   <input type="button" value="Say Hello" onClick="RememberStuff()">
+  
+  
+  
+  
+   <br><br>
 
 <a href="2014/Quintus/jorisgame/index.html"{
 transition: text-shadow 2s;
