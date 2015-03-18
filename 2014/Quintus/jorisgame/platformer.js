@@ -7,10 +7,10 @@
 // This is the example from the website homepage, it consists
 // a simple, non-animated platformer with some enemies and a 
 // target for the player.
-function validateForm() {
+
 var score=0;
 var levelNu=1;
-var naam=" document.forms["myForm"].value;";
+var naam;
 
 
 function scoreBijwerken(){
