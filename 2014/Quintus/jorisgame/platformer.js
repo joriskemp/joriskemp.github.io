@@ -10,7 +10,7 @@
 
 var score=0;
 var levelNu=1;
-var naam;
+
 
 
 function scoreBijwerken(){
