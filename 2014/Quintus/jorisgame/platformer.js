@@ -11,7 +11,7 @@
 var score=0;
 var levelNu=1;
 var naam="+denaam()+";
-
+denaam();
 
 function scoreBijwerken(){
   document.getElementById("deScore").innerHTML=score;
