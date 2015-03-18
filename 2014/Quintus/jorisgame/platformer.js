@@ -10,8 +10,8 @@
 
 var score=0;
 var levelNu=1;
-var naam="+denaam()+";
-denaam();
+var naam=" document.forms["myForm"].value;";
+
 
 function scoreBijwerken(){
   document.getElementById("deScore").innerHTML=score;
