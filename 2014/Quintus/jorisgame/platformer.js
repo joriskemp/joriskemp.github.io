@@ -68,11 +68,11 @@ Q.Sprite.extend("Player",{
         score=score+100;
         levelNu=levelNu+1;
         if (levelNu>4) {
-          Q.stageScene("endGame",1, { label: "beste "+naam+"Het spel is afgelopen. Score was "+score+".het hele spel Opnieuw?" });
+          Q.stageScene("endGame",1, { label: "beste "+ naam +"Het spel is afgelopen. Score was "+score+".het hele spel Opnieuw?" });
           levelNu=1;
           score=0;
         } else {
-          Q.stageScene("endGame",1, { label: "beste "+naam+"Ben je klaar voor het volgende level?" });
+          Q.stageScene("endGame",1, { label: "beste "+ naam +"Ben je klaar voor het volgende level?" });
         }
         this.destroy();
         scoreBijwerken();
