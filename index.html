@@ -21,16 +21,25 @@
       {
         var nameElement = document.getElementById("someInput");
         var naam = nameElement.value;
-        //document.cookie=naam +"; expires=Sun, 05 April 2015 00:00:00 UTC";
-        //document.cookie=naam; 
-        
-        
+      
         var now = new Date();
         var time = now.getTime();
         var expireTime = time + 1000*36000;
         now.setTime(expireTime);
-        document.cookie=naam+'';expires='+now.toGMTString()+';path=/';
-          document.cookie=naam;
+      
+      
+      
+      
+        document.cookie=naam +"; expires"+now.toGMTString();
+        //document.cookie=naam; 
+        
+        
+        // var now = new Date();
+        // var time = now.getTime();
+        // var expireTime = time + 1000*36000;
+        // now.setTime(expireTime);
+        // document.cookie=naam+'';expires='+now.toGMTString()+';path=/';
+        //   document.cookie=naam;
   
         
              }
